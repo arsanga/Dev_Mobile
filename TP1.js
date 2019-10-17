@@ -22,9 +22,9 @@ async function start() {
     let mult = number1 * number2;
     let division = number1 / number2;
 
-    console.log('La somme est ;', somme);
-    console.log('La soustraction est ;', substract);
-    console.log('La somme multiplication est : ;', mult);
-    console.log('La division est ;', division);
+    console.log('La somme est :', somme);
+    console.log('La soustraction est :', substract);
+    console.log('La somme multiplication est :', mult);
+    console.log('La division est :', division);
     process.exit();
 }
