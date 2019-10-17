@@ -63,7 +63,7 @@ function printDuPlusGrantElement() {
         console.log(min);
     }
 
-
+printDesElement();
     printDuTableuaInverseDesElements();
     printDesElementSuperieurATrois();
     printDesElementPairs();
@@ -79,7 +79,7 @@ function printMoyenne() {
 }
 
 function indexDeQuinz() {
-    console.log('Index de quinz est:');
+    console.log('Index de 15 est:');
 
     for (let num = tab1.length - 1; num >= 0; num--) {
         if (tab1[num] === 15) {
@@ -88,5 +88,36 @@ function indexDeQuinz() {
     }
 }
 
+function nombreDeDoublons() {
+    console.log('Le nombre de doublon est:');
+ let tabDoublon = [];
+ let temp = [];
+
+    for (let num = 0; num <= tab1.length-1; num++) {
+        let k=0;
+        for (let num2 = 1; num2 <= tab1.length-2; num2++) {
+            if (tab1[num] === tab1[num2]) {
+               temp[k] = tab1[num];
+               k++;
+                let j = 1;
+                for(let i = 0; i<temp.length;i++){
+                    if (temp[i] !== tab1[num] && temp[i] !== tab1[num2]){
+                        tabDoublon[j] = temp[i];
+                        j++;
+                    }
+
+                }
+            }
+
+        }
+      //  num2 = num;
+      // temp = [];
+    }
+
+        console.log(tabDoublon.length);
+
+}
+
 printMoyenne();
 indexDeQuinz();
+nombreDeDoublons();
