@@ -14,7 +14,7 @@ start();
 
 async function start() {
     let number1BP = await ask('Premier nombre...? ');
-    let number2BP = await ask('Dexieme nombre ....? ');
+    let number2BP = await ask('Deuxieme nombre ....? ');
     let number1 = parseInt(number1BP.toString());
     let number2 = parseInt(number2BP.toString());
     let somme = number1 + number2;
